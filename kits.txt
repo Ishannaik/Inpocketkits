@@ -13,15 +13,15 @@ legend:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "257:0:1"
+  - "276:0:1:Legend Sword:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "310:0:1"
+  chestplate: "311:0:1:Legend:armor_protection:1"
+  leggings: "312:0:1"
+  boots: "313:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the Legend kit, you will be able to redeem another in 1 hour"
 
   cooldown:
     hours: 1
@@ -30,15 +30,7 @@ legend:
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
-  - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
+  - "regeneration:120:2"
   overlord:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -53,15 +45,15 @@ legend:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "206:0:10"
+  - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "306:0:1"
+  chestplate: "307:0:1:Overlord:armor_protection:1"
+  leggings: "308:0:1:Leggings Name"
+  boots: "309:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} Youu just received the Overlord kit, you will be able to redeem another in 1 hour and 15 minutes!"
 
   cooldown:
     hours: 1
@@ -70,15 +62,7 @@ legend:
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
-  - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
+  - "haste:120:2"
 mlg:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -93,8 +77,8 @@ mlg:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  - "257:0:1"
+  - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
   helmet: "302:0:1"
   chestplate: "303:0:1:DEFAULT:armor_protection:1"
   leggings: "304:0:1:Leggings Name"
