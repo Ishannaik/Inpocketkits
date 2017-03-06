@@ -1,5 +1,245 @@
 ---
-testkit:
+legend:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 1
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+  overlord:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 1
+    minutes: 15
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+mlg:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 1
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+party:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 50
+    minutes: 0
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+starter:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 0
+    minutes: 40
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+vip:
+  # Fromat: "id:damage:count:name:ench_name:ench_level"
+
+  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
+
+  # If you don't want enchantments or custom name: "id:damage:count"
+
+  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
+
+  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
+  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
+
+  # Please note: You have to write numeric IDs
+  items:
+  - "260:0:10"
+  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "302:0:1"
+  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  leggings: "304:0:1:Leggings Name"
+  boots: "305:0:1"
+
+  commands:
+  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+
+  cooldown:
+    hours: 0
+    minutes: 10
+
+  # Format: "name:time:amplifier"
+  # Time is in seconds
+  effects:
+  - "speed:120:2"
+
+  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
+  worlds:
+  - "kitpvp"
+  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
+  users:
+  - "luca28pet"
+  - "dioconsole"
+jorti1:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
   # If you want ONLY custom name (no enchantments): "id:damage:count:name"
@@ -25,7 +265,7 @@ testkit:
 
   cooldown:
     hours: 24
-    minutes: 30
+    minutes: 0
 
   # Format: "name:time:amplifier"
   # Time is in seconds
@@ -39,3 +279,4 @@ testkit:
   users:
   - "luca28pet"
   - "dioconsole"
+
