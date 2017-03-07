@@ -79,13 +79,13 @@ mlg:
   items:
   - "257:0:1"
   - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  helmet: "306:0:1"
+  chestplate: "307:0:1:MLG:armor_protection:1"
+  leggings: "300:0:1"
+  boots: "301:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received kit MLG, you can redeem another in 1 hour!"
 
   cooldown:
     hours: 1
@@ -117,32 +117,23 @@ party:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "272:0:4:Party:weapon_sharpness:1:weapon_knockback:1"
+  helmet: "302:0:4:Party"
+  chestplate: "303:0:4:Party:armor_protection:1"
+  leggings: "304:0:4:Party"
+  boots: "305:0:4:Party"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received kit party, perfect for you and your faction members! You can redeem the party kit again in 48 hours"
 
   cooldown:
-    hours: 50
+    hours: 48
     minutes: 0
 
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
-  - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
+  - "strength:120:2"
 starter:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -160,7 +151,7 @@ starter:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
   helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
+  chestplate: "303:0:1:Starter:armor_protection:1"
   leggings: "304:0:1:Leggings Name"
   boots: "305:0:1"
 
