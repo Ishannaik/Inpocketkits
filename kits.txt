@@ -95,14 +95,6 @@ mlg:
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
 party:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -148,12 +140,12 @@ soldier:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "6:0:1"
+  - "268:0:1:Soldier:weapon_sharpness:3:weapon_knockback:1"
+  helmet: "298:0:1"
+  chestplate: "299:0:1:Soldier:armor_protection:1"
+  leggings: "300:0:1"
+  boots: "301:0:1"
 
   commands:
   - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
@@ -166,14 +158,6 @@ soldier:
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
   mercenary:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -206,14 +190,6 @@ soldier:
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
   sniper:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -228,12 +204,13 @@ soldier:
 
   # Please note: You have to write numeric IDs
   items:
-  - "260:0:10"
+  - "261:0:1:Sniper:infinity:1"
+  - "262:0:1"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  helmet: "0:0:1"
+  chestplate: "315:0:1:Sniper:durability:3"
+  leggings: "0:0:1:Leggings Name"
+  boots: "0:0:1"
 
   commands:
   - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
@@ -246,14 +223,6 @@ soldier:
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
   god:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -271,7 +240,7 @@ soldier:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
   helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
+  chestplate: "303:0:1:God3:armor_protection:1"
   leggings: "304:0:1:Leggings Name"
   boots: "305:0:1"
 
