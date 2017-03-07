@@ -1,361 +1,623 @@
 ---
-mlg:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
+Player:
   items:
-  - "257:0:1"
-  - "276:0:1:Legend Sword:weapon_sharpness:3:weapon_knockback:1"
-  - "466:0:10:Gapple"
-  helmet: "310:0:1"
-  chestplate: "311:0:1:MLG:armor_protection:1"
-  leggings: "312:0:1"
-  boots: "313:0:1"
-
-  commands:
-  - "tell {player} You just received the MLG kit, you will be able to redeem another in 1 hour"
-
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe PLayer's Bow"
+  - id: 262
+    damage: 0
+    count: 16
+    name: "§4§l§oThe Player's Arrow"
+  - id: 272
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Player's Sword"
+    enchantment:
+      weapon_sharpness: 0
+      weapon_knockback: 0
+  - id: 364
+    damage: 0
+    count: 16
+    name: "Steak"
+  helmet:
+    id: 298
+    name: "§o§l§4The Player's Helmet"
+    enchantment:
+      armor_protection: 0
+  chestplate:
+    id: 299
+    name: "§o§l§4The Player's Tunic"
+    enchantment:
+      armor_protection: 0
+  leggings:
+    id: 300
+    name: "§o§l§4The Player's Pants"
+    enchantment:
+      armor_protection: 0
+  boots:
+    id: 301
+    name: "§o§l§4The Player's Boots"
+    enchantment:
+      armor_protection: 0
   cooldown:
-    hours: 1
+    hours: 46
     minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "regeneration:120:2"
-  overlord:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "206:0:10"
-  - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
-  - "466:0:5:Gapple"
-  helmet: "306:0:1"
-  chestplate: "307:0:1:Overlord:armor_protection:1"
-  leggings: "308:0:1:Leggings Name"
-  boots: "309:0:1"
-
   commands:
-  - "tell {player} Youu just received the Overlord kit, you will be able to redeem another in 1 hour and 15 minutes!"
-
-  cooldown:
-    hours: 1
-    minutes: 15
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
+  - "tellraw {player} §4 you got the Player kit"
   effects:
-  - "haste:120:2"
-legend:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
+  - name: "speed"
+    seconds: 9999
+    amplifier: 1
+Member:
   items:
-  - "257:0:1"
-  - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
-  - "322:0:10:Gapple"
-  - "466:0:1:Gapple"
-  helmet: "306:0:1"
-  chestplate: "307:0:1:Legend:armor_protection:1"
-  leggings: "300:0:1"
-  boots: "301:0:1"
-
-  commands:
-  - "tell {player} You just received kit Legend, you can redeem another in 1 hour!"
-
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Member's Bow"
+  - id: 262
+    damage: 0
+    count: 32
+    name: "§4§l§oThe Member's Arrow"
+  - id: 267
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Member's Sword"
+    enchantment:
+      weapon_sharpness: 1
+      weapon_knockback: 1
+  - id: 364
+    damage: 0
+    count: 32
+    name: "Steak"
+  helmet:
+    id: 302
+    name: "§o§l§4The Member's Helmet"
+    enchantment:
+      armor_protection: 1
+  chestplate:
+    id: 303
+    name: "§o§l§4The Member's Chestplate"
+    enchantment:
+      armor_protection: 1
+  leggings:
+    id: 304
+    name: "§o§l§4The Member's Leggings"
+    enchantment:
+      armor_protection: 1
+  boots:
+    id: 305
+    name: "§o§l§4The Member's Boots"
+    enchantment:
+      armor_protection: 1
   cooldown:
-    hours: 1
+    hours: 46
     minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-party:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "272:0:4:Party:weapon_sharpness:1:weapon_knockback:1"
-  - "322:0:20:Gapple"
-  helmet: "302:0:4:Party"
-  chestplate: "303:0:4:Party:armor_protection:1"
-  leggings: "304:0:4:Party"
-  boots: "305:0:4:Party"
-
   commands:
-  - "tell {player} You just received kit party, perfect for you and your faction members! You can redeem the party kit again in 48 hours"
-
+  - "tellraw {player} §4 you got the Member kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 2
+Soldier:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Soldier's Bow"
+  - id: 262
+    damage: 0
+    count: 64
+    name: "§4§l§oThe Soldier's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Soldier's Sword"
+    enchantment:
+      weapon_sharpness: 2
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 306
+    name: "§o§l§4The Soldier's Helmet"
+    enchantment:
+      armor_protection: 2
+  chestplate:
+    id: 307
+    name: "§o§l§4The Soldier's Chestplate"
+    enchantment:
+      armor_protection: 2
+  leggings:
+    id: 308
+    name: "§o§l§4The Soldier's Leggings"
+    enchantment:
+      armor_protection: 2
+  boots:
+    id: 309
+    name: "§o§l§4The Soldier's Boots"
+    enchantment:
+      armor_protection: 2
   cooldown:
-    hours: 48
+    hours: 46
     minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "strength:120:2"
-soldier:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "6:0:1"
-  - "268:0:1:Soldier:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "298:0:1"
-  chestplate: "299:0:1:Soldier:armor_protection:1"
-  leggings: "300:0:1"
-  boots: "301:0:1"
-
   commands:
-  - "tell {player} You just received kit Soldier, you can redeem another in 40 minutes"
-
+  - "tellraw {player} §4 you got the Soldier kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 3
+Mercinary:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Mercinary's Bow"
+  - id: 262
+    damage: 0
+    count: 64
+    name: "§4§l§oThe Mercinary's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Mercinary's Sword"
+    enchantment:
+      weapon_sharpness: 3
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 306
+    name: "§o§l§4The Mercinary's Helmet"
+    enchantment:
+      armor_protection: 3
+  chestplate:
+    id: 307
+    name: "§o§l§4The Mercinary's Chestplate"
+    enchantment:
+      armor_protection: 3
+  leggings:
+    id: 308
+    name: "§o§l§4The Mercinary's Leggings"
+    enchantment:
+      armor_protection: 3
+  boots:
+    id: 309
+    name: "§o§l§4The Mercinary's Boots"
+    enchantment:
+      armor_protection: 3
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the Mercinary kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 3
+Sniper:
+  items:
+  - id: 261
+    damage: 0
+    count: 128
+    name: "§4§l§oThe Sniper's Bow"
+  - id: 262
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Sniper's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Sniper's Sword"
+    enchantment:
+      weapon_sharpness: 2
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The Sniper's Helmet"
+    enchantment:
+      armor_protection: 2
+  chestplate:
+    id: 311
+    name: "§o§l§4The Sniper's Chestplate"
+    enchantment:
+      armor_protection: 2
+  leggings:
+    id: 312
+    name: "§o§l§4The Sniper's Leggings"
+    enchantment:
+      armor_protection: 2
+  boots:
+    id: 313
+    name: "§o§l§4The Sniper's Boots"
+    enchantment:
+      armor_protection: 2
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the Sniper kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 3
+God:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe God's Bow"
+  - id: 262
+    damage: 0
+    count: 256
+    name: "§4§l§oThe God's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe God Sword"
+    enchantment:
+      weapon_sharpness: 4
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The God Helmet"
+    enchantment:
+      armor_protection: 4
+  chestplate:
+    id: 311
+    name: "§o§l§4The God Chestplate"
+    enchantment:
+      armor_protection: 4
+  leggings:
+    id: 312
+    name: "§o§l§4The God Leggings"
+    enchantment:
+      armor_protection: 4
+  boots:
+    id: 313
+    name: "§o§l§4The God Boots"
+    enchantment:
+      armor_protection: 4
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the God kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 4
+  - name: "jump_boost"
+    seconds: 9999
+    amplifier: 2
+Assasin:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Assasin's Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe Assasin's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Assasin's Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The Assasin's Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§o§l§4The Assasin's Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§o§l§4The Assasin's Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§o§l§4The Assasin's Boots"
+    enchantment:
+      armor_protection: 5
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the Assasin kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jump_boost"
+    seconds: 9999
+    amplifier: 2    
+Legend:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe Legendary Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The Legendary Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§o§l§4The Legendary Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§o§l§4The Legendary Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§o§l§4The Legendary Boots"
+    enchantment:
+      armor_protection: 5
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the Legend kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jump_boost"
+    seconds: 9999
+    amplifier: 2
+OverLord:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Devil's Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe Devil's Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Devil's Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§4§l§oThe Devil's Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§4§l§oThe Devil's Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§4§l§oThe Devil's Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§4§l§oThe Devil's Boots"
+    enchantment:
+      armor_protection: 5
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the OverLord kit"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jumpbost"
+    seconds: 9999
+    amplifier: 2
+MLG:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe MLG Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe MLG Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe MLG Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The MLG Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§o§l§4The MLG Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§o§l§4The MLG Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§o§l§4The MLG Boots"
+    enchantment:
+      armor_protection: 5
+  cooldown:
+    hours: 46
+    minutes: 0
+  commands:
+  - "tellraw {player} §4 you got the kit MLG"
+  effects:
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jumpbost"
+    seconds: 9999
+    amplifier: 2
+Staff:
+  items:
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe Legendary Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The Legendary Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§o§l§4The Legendary Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§o§l§4The Legendary Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§o§l§4The Legendary Boots"
+    enchantment:
+      armor_protection: 5
   cooldown:
     hours: 0
-    minutes: 40
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-  mercenary:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "260:0:10"
-  - "271:0:1:Mercenary:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "307:0:1:Mercenary:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
-
-  commands:
-  - "tell {player} You just received kit mercenary, you can redeem another in 45 minutes"
-
-  cooldown:
-    hours: 0
-    minutes: 45
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-  sniper:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "261:0:1:Sniper:infinity:1"
-  - "262:0:1"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "0:0:1"
-  chestplate: "315:0:1:Sniper:durability:3"
-  leggings: "0:0:1:Leggings Name"
-  boots: "0:0:1"
-
-  commands:
-  - "tell {player} You just received the Sniper kit, you can redeem another in 50 minutes!"
-
-  cooldown:
-    hours: 0
-    minutes: 50
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-  god:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:God:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
-
-  commands:
-  - "tell {player} You just received the GOD kit, you can redeem another in 1 hour!"
-
-  cooldown:
-    hours: 1
     minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-  assassin:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
-
   commands:
-  - "tell {player} You just received the Assassin kit, you can redeem another in 2 hours!"
-
-  cooldown:
-    hours: 2
-    minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
+  - "tellraw {player} §4 you got the Legend kit"
   effects:
-  - "speed:120:2"
-  
-vip:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jump_boost"
+    seconds: 9999
+    amplifier: 2
+Youtuber:
   items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  - "322:0:10:Gapple"
-  helmet: "302:0:1:VIP:armor_protection:1"
-  chestplate: "303:0:1:VIP:armor_protection:1"
-  leggings: "304:0:1:VIP:armor_protection:1"
-  boots: "305:0:1:VIP:armor_protection:1"
-
-  commands:
-  - "tell {player} You just received the VIP kit, you can redeem another in 5 hours!"
-
-  cooldown:
-    hours: 5
-    minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-op:
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  - "466:0:10:Gapple"
-  helmet: "302:0:1:OP:armor_protection:5""
-  chestplate: "303:0:1:OP:armor_protection:5"
-  leggings: "304:0:1:OP:armor_protection:5""
-  boots: "305:0:1:OP:armor_protection:5""
-
-  commands:
-  - "tell {player} You just received the OP kit, you can redeem another in 24 hours!"
-
+  - id: 261
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Bow"
+  - id: 262
+    damage: 0
+    count: 512
+    name: "§4§l§oThe Legendary Arrow"
+  - id: 276
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legendary Sword"
+    enchantment:
+      weapon_sharpness: 5
+      weapon_knockback: 2
+  - id: 364
+    damage: 0
+    count: 64
+    name: "Steak"
+  helmet:
+    id: 310
+    name: "§o§l§4The Legendary Helmet"
+    enchantment:
+      armor_protection: 5
+  chestplate:
+    id: 311
+    name: "§o§l§4The Legendary Chestplate"
+    enchantment:
+      armor_protection: 5
+  leggings:
+    id: 312
+    name: "§o§l§4The Legendary Leggings"
+    enchantment:
+      armor_protection: 5
+  boots:
+    id: 313
+    name: "§o§l§4The Legendary Boots"
+    enchantment:
+      armor_protection: 5
   cooldown:
     hours: 24
     minutes: 0
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
+  commands:
+  - "tellraw {player} §4 you got the Youtuber kit"
   effects:
-  - "speed:120:2"
+  - name: "speed"
+    seconds: 9999
+    amplifier: 5
+  - name: "jump_boost"
+    seconds: 9999
+    amplifier: 2
+...
