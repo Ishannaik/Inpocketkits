@@ -1,5 +1,5 @@
 ---
-legend:
+mlg:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
   # If you want ONLY custom name (no enchantments): "id:damage:count:name"
@@ -15,13 +15,14 @@ legend:
   items:
   - "257:0:1"
   - "276:0:1:Legend Sword:weapon_sharpness:3:weapon_knockback:1"
+  - "466:0:10:Gapple"
   helmet: "310:0:1"
-  chestplate: "311:0:1:Legend:armor_protection:1"
+  chestplate: "311:0:1:MLG:armor_protection:1"
   leggings: "312:0:1"
   boots: "313:0:1"
 
   commands:
-  - "tell {player} You just received the Legend kit, you will be able to redeem another in 1 hour"
+  - "tell {player} You just received the MLG kit, you will be able to redeem another in 1 hour"
 
   cooldown:
     hours: 1
@@ -47,6 +48,7 @@ legend:
   items:
   - "206:0:10"
   - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
+  - "466:0:5:Gapple"
   helmet: "306:0:1"
   chestplate: "307:0:1:Overlord:armor_protection:1"
   leggings: "308:0:1:Leggings Name"
@@ -63,7 +65,7 @@ legend:
   # Time is in seconds
   effects:
   - "haste:120:2"
-mlg:
+legend:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
   # If you want ONLY custom name (no enchantments): "id:damage:count:name"
@@ -79,13 +81,15 @@ mlg:
   items:
   - "257:0:1"
   - "267:0:1:Overlord:weapon_sharpness:3:weapon_knockback:1"
+  - "322:0:10:Gapple"
+  - "466:0:1:Gapple"
   helmet: "306:0:1"
-  chestplate: "307:0:1:MLG:armor_protection:1"
+  chestplate: "307:0:1:Legend:armor_protection:1"
   leggings: "300:0:1"
   boots: "301:0:1"
 
   commands:
-  - "tell {player} You just received kit MLG, you can redeem another in 1 hour!"
+  - "tell {player} You just received kit Legend, you can redeem another in 1 hour!"
 
   cooldown:
     hours: 1
@@ -110,6 +114,7 @@ party:
   # Please note: You have to write numeric IDs
   items:
   - "272:0:4:Party:weapon_sharpness:1:weapon_knockback:1"
+  - "322:0:20:Gapple"
   helmet: "302:0:4:Party"
   chestplate: "303:0:4:Party:armor_protection:1"
   leggings: "304:0:4:Party"
@@ -148,7 +153,7 @@ soldier:
   boots: "301:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received kit Soldier, you can redeem another in 40 minutes"
 
   cooldown:
     hours: 0
@@ -173,18 +178,18 @@ soldier:
   # Please note: You have to write numeric IDs
   items:
   - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
+  - "271:0:1:Mercenary:weapon_sharpness:3:weapon_knockback:1"
   helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
+  chestplate: "307:0:1:Mercenary:armor_protection:1"
   leggings: "304:0:1:Leggings Name"
   boots: "305:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received kit mercenary, you can redeem another in 45 minutes"
 
   cooldown:
     hours: 0
-    minutes: 40
+    minutes: 45
 
   # Format: "name:time:amplifier"
   # Time is in seconds
@@ -213,11 +218,11 @@ soldier:
   boots: "0:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the Sniper kit, you can redeem another in 50 minutes!"
 
   cooldown:
     hours: 0
-    minutes: 40
+    minutes: 50
 
   # Format: "name:time:amplifier"
   # Time is in seconds
@@ -240,29 +245,21 @@ soldier:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
   helmet: "302:0:1"
-  chestplate: "303:0:1:God3:armor_protection:1"
+  chestplate: "303:0:1:God:armor_protection:1"
   leggings: "304:0:1:Leggings Name"
   boots: "305:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the GOD kit, you can redeem another in 1 hour!"
 
   cooldown:
-    hours: 0
-    minutes: 40
+    hours: 1
+    minutes: 0
 
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
   assassin:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -285,64 +282,17 @@ soldier:
   boots: "305:0:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the Assassin kit, you can redeem another in 2 hours!"
 
   cooldown:
-    hours: 0
-    minutes: 40
+    hours: 2
+    minutes: 0
 
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
-  :
-  # Fromat: "id:damage:count:name:ench_name:ench_level"
-
-  # If you want ONLY custom name (no enchantments): "id:damage:count:name"
-
-  # If you don't want enchantments or custom name: "id:damage:count"
-
-  # If you want ONLY enchantments (no custom name): "id:damage:count:DEFAULT:ench_name:ench_level" -- you have to put DEFAULT in the name field
-
-  # If you want more than one enchantment just do: "id:damage:count:name:ench1_name:ench1_level:ench2_name:ench2_level"
-  # or "id:damage:count:DEFAULT:ench1_name:ench1_level:ench2_name:ench2_level" if you don't want a custom item name
-
-  # Please note: You have to write numeric IDs
-  items:
-  - "260:0:10"
-  - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:Starter:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
-
-  commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
-
-  cooldown:
-    hours: 0
-    minutes: 40
-
-  # Format: "name:time:amplifier"
-  # Time is in seconds
-  effects:
-  - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
+  
 vip:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -359,30 +309,23 @@ vip:
   items:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "322:0:10:Gapple"
+  helmet: "302:0:1:VIP:armor_protection:1"
+  chestplate: "303:0:1:VIP:armor_protection:1"
+  leggings: "304:0:1:VIP:armor_protection:1"
+  boots: "305:0:1:VIP:armor_protection:1"
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the VIP kit, you can redeem another in 5 hours!"
 
   cooldown:
-    hours: 0
-    minutes: 10
+    hours: 5
+    minutes: 0
 
   # Format: "name:time:amplifier"
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
 op:
   # Fromat: "id:damage:count:name:ench_name:ench_level"
 
@@ -399,13 +342,14 @@ op:
   items:
   - "260:0:10"
   - "267:0:1:Sword Name:weapon_sharpness:3:weapon_knockback:1"
-  helmet: "302:0:1"
-  chestplate: "303:0:1:DEFAULT:armor_protection:1"
-  leggings: "304:0:1:Leggings Name"
-  boots: "305:0:1"
+  - "466:0:10:Gapple"
+  helmet: "302:0:1:OP:armor_protection:5""
+  chestplate: "303:0:1:OP:armor_protection:5"
+  leggings: "304:0:1:OP:armor_protection:5""
+  boots: "305:0:1:OP:armor_protection:5""
 
   commands:
-  - "tell {player} you got an awesome kit thanks to AdvancedKits plugin!"
+  - "tell {player} You just received the OP kit, you can redeem another in 24 hours!"
 
   cooldown:
     hours: 24
@@ -415,12 +359,3 @@ op:
   # Time is in seconds
   effects:
   - "speed:120:2"
-
-  # If you do not use pureperms, use 'worlds' to specify in which worlds you want this kit to be used
-  worlds:
-  - "kitpvp"
-  # If you do not use pureperms, use 'users' to specify which players will be able to get this kit
-  users:
-  - "luca28pet"
-  - "dioconsole"
-
