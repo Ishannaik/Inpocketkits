@@ -41,14 +41,14 @@ Player:
     enchantment:
       armor_protection: 0
   cooldown:
-    hours: 46
+    hours: 24
     minutes: 0
   commands:
   - "tellraw {player} §4 you got the Player kit"
   effects:
-  - name: "speed"
-    seconds: 9999
-    amplifier: 1
+  - name: 0
+    seconds: 0
+    amplifier: 0
 Member:
   items:
   - id: 261
@@ -97,7 +97,7 @@ Member:
   - "tellraw {player} §4 you got the Member kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 9
     amplifier: 2
 Soldier:
   items:
@@ -141,16 +141,30 @@ Soldier:
     enchantment:
       armor_protection: 2
   cooldown:
-    hours: 46
+    hours: 28
     minutes: 0
   commands:
   - "tellraw {player} §4 you got the Soldier kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 15
     amplifier: 3
 Mercinary:
-  items:
+  items: 
+ - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Mercinary's Pic"
+    enchantment:
+      pickaxe_unbreaking: 2
+  - id: 49
+    damage: 0
+    count: 32
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 32
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
@@ -191,19 +205,34 @@ Mercinary:
     enchantment:
       armor_protection: 3
   cooldown:
-    hours: 46
+    hours: 30
     minutes: 0
   commands:
   - "tellraw {player} §4 you got the Mercinary kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 20
     amplifier: 3
 Sniper:
   items:
+ - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Sniper's Pic"
+    enchantment:
+      pickaxe_efficiency:2
+      pickaxe_unbreaking: 2
+ - id: 49
+    damage: 0
+    count: 46
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 40
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
-    count: 128
+    count: 64
     name: "§4§l§oThe Sniper's Bow"
   - id: 262
     damage: 0
@@ -241,23 +270,38 @@ Sniper:
     enchantment:
       armor_protection: 2
   cooldown:
-    hours: 46
+    hours: 40
     minutes: 0
   commands:
   - "tellraw {player} §4 you got the Sniper kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 30
     amplifier: 3
 God:
   items:
+- id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe God's Pic"
+    enchantment:
+      pickaxe_efficiency:3
+      pickaxe_unbreaking: 3
+ - id: 49
+    damage: 0
+    count: 50
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 50
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
     name: "§4§l§oThe God's Bow"
   - id: 262
     damage: 0
-    count: 256
+    count: 128
     name: "§4§l§oThe God's Arrow"
   - id: 276
     damage: 0
@@ -291,26 +335,41 @@ God:
     enchantment:
       armor_protection: 4
   cooldown:
-    hours: 46
+    hours: 42
     minutes: 0
   commands:
   - "tellraw {player} §4 you got the God kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 30
     amplifier: 4
   - name: "jump_boost"
-    seconds: 9999
+    seconds: 40
     amplifier: 2
 Assasin:
-  items:
+  items: 
+- id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Assasin's Pic"
+    enchantment:
+      pickaxe_efficiency:4
+      pickaxe_unbreaking: 3
+- id: 49
+    damage: 0
+    count: 32
+    name: "§4§I§oObi"
+ - id: 322:1
+    damage: 0
+    count: 64
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
     name: "§4§l§oThe Assasin's Bow"
   - id: 262
     damage: 0
-    count: 512
+    count: 128
     name: "§4§l§oThe Assasin's Arrow"
   - id: 276
     damage: 0
@@ -350,20 +409,36 @@ Assasin:
   - "tellraw {player} §4 you got the Assasin kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 50
     amplifier: 5
   - name: "jump_boost"
-    seconds: 9999
+    seconds: 40
     amplifier: 2    
 Legend:
-  items:
+  items: - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Legend's Pic"
+    enchantment:
+      pickaxe_efficiency:4
+      pickaxe_unbreaking: 4
+- id: 49
+    damage: 0
+    count: 1
+    damage: 0
+    count: 64
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 72
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
     name: "§4§l§oThe Legendary Bow"
   - id: 262
     damage: 0
-    count: 512
+    count: 128
     name: "§4§l§oThe Legendary Arrow"
   - id: 276
     damage: 0
@@ -403,20 +478,30 @@ Legend:
   - "tellraw {player} §4 you got the Legend kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 59
     amplifier: 5
   - name: "jump_boost"
-    seconds: 9999
+    seconds: 28
     amplifier: 2
 OverLord:
-  items:
+  items: - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Devil's Pic"
+    enchantment:
+      pickaxe_efficiency:5
+      pickaxe_unbreaking: 4
+- id: 49
+    damage: 0
+    count: 72
+    name: "§4§I§oObi"
   - id: 261
     damage: 0
     count: 1
     name: "§4§l§oThe Devil's Bow"
   - id: 262
     damage: 0
-    count: 512
+    count: 128
     name: "§4§l§oThe Devil's Arrow"
   - id: 276
     damage: 0
@@ -456,20 +541,34 @@ OverLord:
   - "tellraw {player} §4 you got the OverLord kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 110
     amplifier: 5
   - name: "jumpbost"
-    seconds: 9999
+    seconds: 47
     amplifier: 2
-MLG:
-  items:
+   MLG:
+    items: - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe MLG's Pic"
+    enchantment:
+      pickaxe_efficiency:5
+      pickaxe_unbreaking: 4
+- id: 49
+    damage: 0
+    count: 84
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 76
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
     name: "§4§l§oThe MLG Bow"
   - id: 262
     damage: 0
-    count: 512
+    count: 128
     name: "§4§l§oThe MLG Arrow"
   - id: 276
     damage: 0
@@ -509,25 +608,39 @@ MLG:
   - "tellraw {player} §4 you got the kit MLG"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 80
     amplifier: 5
   - name: "jumpbost"
-    seconds: 9999
+    seconds: 28
     amplifier: 2
 Staff:
-  items:
+  items: - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Mercinary's Pic"
+    enchantment:
+      pickaxe_efficiency:5
+      pickaxe_unbreaking: 5
+- id: 49
+    damage: 0
+    count: 110
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 78
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
-    name: "§4§l§oThe Legendary Bow"
+    name: "§4§l§oThe Staff Bow"
   - id: 262
     damage: 0
-    count: 512
-    name: "§4§l§oThe Legendary Arrow"
+    count: 128
+    name: "§4§l§oThe Staff Arrow"
   - id: 276
     damage: 0
     count: 1
-    name: "§4§l§oThe Legendary Sword"
+    name: "§4§l§oThe Staff Sword"
     enchantment:
       weapon_sharpness: 5
       weapon_knockback: 2
@@ -537,50 +650,64 @@ Staff:
     name: "Steak"
   helmet:
     id: 310
-    name: "§o§l§4The Legendary Helmet"
+    name: "§o§l§4The Staff Helmet"
     enchantment:
       armor_protection: 5
   chestplate:
     id: 311
-    name: "§o§l§4The Legendary Chestplate"
+    name: "§o§l§4The Staff Chestplate"
     enchantment:
       armor_protection: 5
   leggings:
     id: 312
-    name: "§o§l§4The Legendary Leggings"
+    name: "§o§l§4The Staff Leggings"
     enchantment:
       armor_protection: 5
   boots:
     id: 313
-    name: "§o§l§4The Legendary Boots"
+    name: "§o§l§4The Staff Boots"
     enchantment:
       armor_protection: 5
   cooldown:
     hours: 0
     minutes: 0
   commands:
-  - "tellraw {player} §4 you got the Legend kit"
+  - "tellraw {player} §4 you got the Staff kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 60
     amplifier: 5
   - name: "jump_boost"
-    seconds: 9999
+    seconds: 120
     amplifier: 2
 Youtuber:
-  items:
+  items: - id: 278
+    damage: 0
+    count: 1
+    name: "§4§l§oThe Mercinary's Pic"
+    enchantment:
+      pickaxe_efficiency:5
+      pickaxe_unbreaking: 5
+- id: 49
+    damage: 0
+    count: 128
+    name: "§4§I§oObi"
+  - id: 322:1
+    damage: 0
+    count: 84
+    name: "§4§I§oGapple"
   - id: 261
     damage: 0
     count: 1
-    name: "§4§l§oThe Legendary Bow"
+    name: "§4§l§oThe YouTuber Bow"
   - id: 262
     damage: 0
-    count: 512
-    name: "§4§l§oThe Legendary Arrow"
+    count: 128
+    name: "§4§l§oThe YouTuber Arrow"
   - id: 276
     damage: 0
     count: 1
-    name: "§4§l§oThe Legendary Sword"
+    name: "§4§l§oThe YouTuber Sword"
     enchantment:
       weapon_sharpness: 5
       weapon_knockback: 2
@@ -590,22 +717,22 @@ Youtuber:
     name: "Steak"
   helmet:
     id: 310
-    name: "§o§l§4The Legendary Helmet"
+    name: "§o§l§4The YouTuber Helmet"
     enchantment:
       armor_protection: 5
   chestplate:
     id: 311
-    name: "§o§l§4The Legendary Chestplate"
+    name: "§o§l§4The YouTuber Chestplate"
     enchantment:
       armor_protection: 5
   leggings:
     id: 312
-    name: "§o§l§4The Legendary Leggings"
+    name: "§o§l§4The YouTuber Leggings"
     enchantment:
       armor_protection: 5
   boots:
     id: 313
-    name: "§o§l§4The Legendary Boots"
+    name: "§o§l§4The YouTuber Boots"
     enchantment:
       armor_protection: 5
   cooldown:
@@ -615,9 +742,9 @@ Youtuber:
   - "tellraw {player} §4 you got the Youtuber kit"
   effects:
   - name: "speed"
-    seconds: 9999
+    seconds: 64
     amplifier: 5
   - name: "jump_boost"
-    seconds: 9999
+    seconds: 60
     amplifier: 2
 ...
